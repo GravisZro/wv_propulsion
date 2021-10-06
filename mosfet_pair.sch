@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 5950 4500 3    50   UnSpc ~ 0
+Gnd
+Text HLabel 5950 3100 1    50   UnSpc ~ 0
+Vin
+Text HLabel 6150 3800 2    50   UnSpc ~ 0
+output
+Text HLabel 5100 3800 0    50   UnSpc ~ 0
+load
+$Comp
+L mosfets:IRF135B203 Q?
+U 1 1 613A56EF
+P 5850 4200
+AR Path="/613A56EF" Ref="Q?"  Part="1" 
+AR Path="/613A3EE0/613A56EF" Ref="Q2"  Part="1" 
+AR Path="/613B2859/613B2D4E/613A56EF" Ref="Q2"  Part="1" 
+AR Path="/613B2859/613B4B66/613A56EF" Ref="Q?"  Part="1" 
+AR Path="/613B2859/613B4F99/613A56EF" Ref="Q?"  Part="1" 
+AR Path="/613B2859/613C2EE6/613A56EF" Ref="Q4"  Part="1" 
+AR Path="/613B2859/613C2FF8/613A56EF" Ref="Q6"  Part="1" 
+AR Path="/6148BA72/613A56EF" Ref="Q?"  Part="1" 
+AR Path="/613B2859/614EA014/613A56EF" Ref="Q8"  Part="1" 
+AR Path="/615A74BD/615A964C/613A56EF" Ref="Q8"  Part="1" 
+AR Path="/615A74BD/6147F0CF/613A56EF" Ref="Q2"  Part="1" 
+F 0 "Q2" V 5800 4300 50  0000 L CNN
+F 1 "IRF135B203" V 6100 3900 50  0000 L CNN
+F 2 "mosfets:TO-220F-3_Horizontal_TabUp" H 5850 4200 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF135S203-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015364c38ddf29b1" H 5850 4200 50  0001 L CNN
+	1    5850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfets:IRF135B203 Q?
+U 1 1 613A56E9
+P 5850 3400
+AR Path="/613A56E9" Ref="Q?"  Part="1" 
+AR Path="/613A3EE0/613A56E9" Ref="Q1"  Part="1" 
+AR Path="/613B2859/613B2D4E/613A56E9" Ref="Q1"  Part="1" 
+AR Path="/613B2859/613B4B66/613A56E9" Ref="Q?"  Part="1" 
+AR Path="/613B2859/613B4F99/613A56E9" Ref="Q?"  Part="1" 
+AR Path="/613B2859/613C2EE6/613A56E9" Ref="Q3"  Part="1" 
+AR Path="/613B2859/613C2FF8/613A56E9" Ref="Q5"  Part="1" 
+AR Path="/6148BA72/613A56E9" Ref="Q?"  Part="1" 
+AR Path="/613B2859/614EA014/613A56E9" Ref="Q7"  Part="1" 
+AR Path="/615A74BD/615A964C/613A56E9" Ref="Q7"  Part="1" 
+AR Path="/615A74BD/6147F0CF/613A56E9" Ref="Q1"  Part="1" 
+F 0 "Q1" V 5800 3500 50  0000 L CNN
+F 1 "IRF135B203" V 6100 3100 50  0000 L CNN
+F 2 "mosfets:TO-220F-3_Horizontal_TabUp" H 5850 3400 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF135S203-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015364c38ddf29b1" H 5850 3400 50  0001 L CNN
+	1    5850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4400 5950 4500
+Wire Wire Line
+	5950 3200 5950 3100
+Text HLabel 5100 3400 0    50   UnSpc ~ 0
+high
+Wire Wire Line
+	5350 3400 5100 3400
+Wire Wire Line
+	5650 3400 5550 3400
+$Comp
+L Device:R_Small_US R?
+U 1 1 613A56F5
+P 5450 3400
+AR Path="/613A56F5" Ref="R?"  Part="1" 
+AR Path="/613A3EE0/613A56F5" Ref="R1"  Part="1" 
+AR Path="/613B2859/613B2D4E/613A56F5" Ref="R1"  Part="1" 
+AR Path="/613B2859/613B4B66/613A56F5" Ref="R?"  Part="1" 
+AR Path="/613B2859/613B4F99/613A56F5" Ref="R?"  Part="1" 
+AR Path="/613B2859/613C2EE6/613A56F5" Ref="R3"  Part="1" 
+AR Path="/613B2859/613C2FF8/613A56F5" Ref="R5"  Part="1" 
+AR Path="/6148BA72/613A56F5" Ref="R?"  Part="1" 
+AR Path="/613B2859/614EA014/613A56F5" Ref="R16"  Part="1" 
+AR Path="/615A74BD/615A964C/613A56F5" Ref="R16"  Part="1" 
+AR Path="/615A74BD/6147F0CF/613A56F5" Ref="R1"  Part="1" 
+F 0 "R1" H 5300 3450 50  0000 L CNN
+F 1 "4.7Ω" H 5200 3350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5450 3400 50  0001 C CNN
+F 3 "~" H 5450 3400 50  0001 C CNN
+	1    5450 3400
+	0    1    1    0   
+$EndComp
+Text HLabel 5100 4200 0    50   UnSpc ~ 0
+low
+Wire Wire Line
+	5650 4200 5550 4200
+$Comp
+L Device:R_Small_US R?
+U 1 1 613A56FB
+P 5450 4200
+AR Path="/613A56FB" Ref="R?"  Part="1" 
+AR Path="/613A3EE0/613A56FB" Ref="R2"  Part="1" 
+AR Path="/613B2859/613B2D4E/613A56FB" Ref="R13"  Part="1" 
+AR Path="/613B2859/613B4B66/613A56FB" Ref="R?"  Part="1" 
+AR Path="/613B2859/613B4F99/613A56FB" Ref="R?"  Part="1" 
+AR Path="/613B2859/613C2EE6/613A56FB" Ref="R4"  Part="1" 
+AR Path="/613B2859/613C2FF8/613A56FB" Ref="R6"  Part="1" 
+AR Path="/6148BA72/613A56FB" Ref="R?"  Part="1" 
+AR Path="/613B2859/614EA014/613A56FB" Ref="R18"  Part="1" 
+AR Path="/615A74BD/615A964C/613A56FB" Ref="R18"  Part="1" 
+AR Path="/615A74BD/6147F0CF/613A56FB" Ref="R3"  Part="1" 
+F 0 "R3" H 5300 4250 50  0000 L CNN
+F 1 "4.7Ω" H 5200 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5450 4200 50  0001 C CNN
+F 3 "~" H 5450 4200 50  0001 C CNN
+	1    5450 4200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5350 4200 5100 4200
+$Comp
+L Device:R_Small_US R?
+U 1 1 61473E41
+P 5450 3800
+AR Path="/61473E41" Ref="R?"  Part="1" 
+AR Path="/613A3EE0/61473E41" Ref="R?"  Part="1" 
+AR Path="/613B2859/613B2D4E/61473E41" Ref="R2"  Part="1" 
+AR Path="/613B2859/613B4B66/61473E41" Ref="R?"  Part="1" 
+AR Path="/613B2859/613B4F99/61473E41" Ref="R?"  Part="1" 
+AR Path="/613B2859/613C2EE6/61473E41" Ref="R14"  Part="1" 
+AR Path="/613B2859/613C2FF8/61473E41" Ref="R15"  Part="1" 
+AR Path="/6148BA72/61473E41" Ref="R?"  Part="1" 
+AR Path="/613B2859/614EA014/61473E41" Ref="R17"  Part="1" 
+AR Path="/615A74BD/615A964C/61473E41" Ref="R17"  Part="1" 
+AR Path="/615A74BD/6147F0CF/61473E41" Ref="R2"  Part="1" 
+F 0 "R2" H 5500 3800 50  0000 L CNN
+F 1 "4.7Ω" H 5500 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5450 3800 50  0001 C CNN
+F 3 "~" H 5450 3800 50  0001 C CNN
+	1    5450 3800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5950 3600 5950 3800
+Connection ~ 5950 3800
+Wire Wire Line
+	5950 3800 5950 4000
+Wire Wire Line
+	5100 3800 5350 3800
+Wire Wire Line
+	5950 3800 5550 3800
+Wire Wire Line
+	6150 3800 5950 3800
+$EndSCHEMATC

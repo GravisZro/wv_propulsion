@@ -1,0 +1,312 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small_US R12
+U 1 1 615164A2
+P 5050 2500
+F 0 "R12" V 5100 2550 50  0000 R CNN
+F 1 "301Ω" V 5100 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5050 2500 50  0001 C CNN
+F 3 "~" H 5050 2500 50  0001 C CNN
+	1    5050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 61524AFD
+P 3950 1800
+F 0 "#PWR0106" H 3950 1650 50  0001 C CNN
+F 1 "+5V" H 3965 1973 50  0000 C CNN
+F 2 "" H 3950 1800 50  0001 C CNN
+F 3 "" H 3950 1800 50  0001 C CNN
+	1    3950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61526B40
+P 3950 3200
+F 0 "#PWR0107" H 3950 2950 50  0001 C CNN
+F 1 "GND" H 3955 3027 50  0000 C CNN
+F 2 "" H 3950 3200 50  0001 C CNN
+F 3 "" H 3950 3200 50  0001 C CNN
+	1    3950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61466A24
+P 1900 2950
+F 0 "J1" H 1980 2942 50  0000 L CNN
+F 1 "Conn_01x02" H 1980 2851 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 1900 2950 50  0001 C CNN
+F 3 "~" H 1900 2950 50  0001 C CNN
+	1    1900 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 61469B9A
+P 1850 2500
+AR Path="/613B2859/61469B9A" Ref="C?"  Part="1" 
+AR Path="/61469B9A" Ref="C2"  Part="1" 
+F 0 "C2" H 1941 2546 50  0000 L CNN
+F 1 "100uH" H 1941 2455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D12.5mm_H20.0mm_P5.00mm" H 1850 2500 50  0001 C CNN
+F 3 "~" H 1850 2500 50  0001 C CNN
+	1    1850 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 2600 6400 2600
+$Comp
+L Device:R_Small_US R11
+U 1 1 615161ED
+P 5050 2600
+F 0 "R11" V 5100 2650 50  0000 R CNN
+F 1 "301Ω" V 5100 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5050 2600 50  0001 C CNN
+F 3 "~" H 5050 2600 50  0001 C CNN
+	1    5050 2600
+	0    1    1    0   
+$EndComp
+$Sheet
+S 5600 2350 800  800 
+U 615A74BD
+F0 "DC Motor Driver and MOSFETS" 50
+F1 "dc_motor_driver.sch" 50
+F2 "DC_high" U L 5600 2500 50 
+F3 "DC_low" U L 5600 2600 50 
+F4 "Vin" U L 5600 2950 50 
+F5 "Gnd" U L 5600 3050 50 
+F6 "output" U R 6400 2600 50 
+$EndSheet
+Wire Wire Line
+	4550 2600 4950 2600
+Wire Wire Line
+	4550 2500 4950 2500
+Wire Wire Line
+	5600 2950 5500 2950
+Wire Wire Line
+	5500 2950 5500 2850
+$Comp
+L power:GND #PWR0105
+U 1 1 614E2CC1
+P 5500 3150
+F 0 "#PWR0105" H 5500 2900 50  0001 C CNN
+F 1 "GND" H 5505 2977 50  0000 C CNN
+F 2 "" H 5500 3150 50  0001 C CNN
+F 3 "" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3050 5500 3050
+Wire Wire Line
+	5500 3050 5500 3150
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 61447D49
+P 6750 2700
+F 0 "J4" H 6830 2692 50  0000 L CNN
+F 1 "Motor" H 6830 2601 50  0000 L CNN
+F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 6750 2700 50  0001 C CNN
+F 3 "~" H 6750 2700 50  0001 C CNN
+	1    6750 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 614EF543
+P 1650 2400
+AR Path="/613B2859/614EF543" Ref="#PWR?"  Part="1" 
+AR Path="/614EF543" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 1650 2250 50  0001 C CNN
+F 1 "+BATT" H 1665 2573 50  0000 C CNN
+F 2 "" H 1650 2400 50  0001 C CNN
+F 3 "" H 1650 2400 50  0001 C CNN
+	1    1650 2400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1600 1150 700  250 
+U 61735FD4
+F0 "5V Regulator" 50
+F1 "5Vregulator.sch" 50
+F2 "Vin" U L 1600 1250 50 
+$EndSheet
+$Comp
+L power:-BATT #PWR0102
+U 1 1 6173AA14
+P 2050 2400
+F 0 "#PWR0102" H 2050 2250 50  0001 C CNN
+F 1 "-BATT" H 2065 2573 50  0000 C CNN
+F 2 "" H 2050 2400 50  0001 C CNN
+F 3 "" H 2050 2400 50  0001 C CNN
+	1    2050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2400 2050 2500
+Wire Wire Line
+	2050 2500 1950 2500
+Wire Wire Line
+	1650 2500 1650 2400
+Wire Wire Line
+	1650 2500 1750 2500
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 614612D8
+P 3050 1750
+F 0 "J2" V 2922 1930 50  0000 L CNN
+F 1 "Communications" V 3013 1930 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3050 1750 50  0001 C CNN
+F 3 "~" H 3050 1750 50  0001 C CNN
+	1    3050 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 614632A7
+P 3450 1400
+F 0 "#PWR0111" H 3450 1150 50  0001 C CNN
+F 1 "GND" H 3455 1227 50  0000 C CNN
+F 2 "" H 3450 1400 50  0001 C CNN
+F 3 "" H 3450 1400 50  0001 C CNN
+	1    3450 1400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1550 2950 1450
+Wire Wire Line
+	2950 1450 2750 1450
+Wire Wire Line
+	3050 1550 3050 1300
+Text GLabel 3050 1300 1    50   UnSpc ~ 0
+14V
+Wire Wire Line
+	3150 1550 3150 1250
+Wire Wire Line
+	3150 1250 3450 1250
+Wire Wire Line
+	3450 1250 3450 1400
+Text GLabel 5500 2850 1    50   UnSpc ~ 0
+14V
+Text GLabel 1350 1250 0    50   UnSpc ~ 0
+14V
+Wire Wire Line
+	1600 1250 1350 1250
+Wire Wire Line
+	1900 2750 1900 2650
+Wire Wire Line
+	1900 2650 2050 2650
+Wire Wire Line
+	2050 2650 2050 2500
+Connection ~ 2050 2500
+Wire Wire Line
+	1800 2650 1650 2650
+Wire Wire Line
+	1650 2650 1650 2500
+Wire Wire Line
+	1800 2650 1800 2750
+Connection ~ 1650 2500
+Wire Wire Line
+	3350 2300 2750 2300
+Wire Wire Line
+	2750 1450 2750 2300
+Wire Wire Line
+	3350 2400 2750 2400
+Wire Wire Line
+	2750 2400 2750 2300
+Connection ~ 2750 2300
+Wire Wire Line
+	4550 2100 4650 2100
+Wire Wire Line
+	5150 2500 5600 2500
+Wire Wire Line
+	5150 2600 5600 2600
+Wire Wire Line
+	4950 1550 4950 1250
+$Comp
+L power:GND #PWR0112
+U 1 1 61779FC8
+P 5350 1400
+F 0 "#PWR0112" H 5350 1150 50  0001 C CNN
+F 1 "GND" H 5355 1227 50  0000 C CNN
+F 2 "" H 5350 1400 50  0001 C CNN
+F 3 "" H 5350 1400 50  0001 C CNN
+	1    5350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 617783ED
+P 4950 1250
+F 0 "#PWR0110" H 4950 1100 50  0001 C CNN
+F 1 "+5V" H 4965 1423 50  0000 C CNN
+F 2 "" H 4950 1250 50  0001 C CNN
+F 3 "" H 4950 1250 50  0001 C CNN
+	1    4950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1450 4850 1550
+Wire Wire Line
+	4650 1450 4850 1450
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 61775A41
+P 4950 1750
+F 0 "J3" V 4822 1930 50  0000 L CNN
+F 1 "Debug" V 4913 1930 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4950 1750 50  0001 C CNN
+F 3 "~" H 4950 1750 50  0001 C CNN
+	1    4950 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny404-SS U1
+U 1 1 612BCCF1
+P 3950 2500
+F 0 "U1" H 3650 3150 50  0000 C CNN
+F 1 "ATtiny404-SS" H 3950 2450 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3950 2500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/50002687A.pdf" H 3950 2500 50  0001 C CNN
+	1    3950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2100 4650 1450
+Wire Wire Line
+	5050 1300 5050 1550
+Wire Wire Line
+	5050 1300 5350 1300
+Wire Wire Line
+	5350 1400 5350 1300
+Wire Wire Line
+	6550 2850 6550 2700
+$Comp
+L power:-BATT #PWR0101
+U 1 1 61607F90
+P 6550 2850
+F 0 "#PWR0101" H 6550 2700 50  0001 C CNN
+F 1 "-BATT" H 6565 3023 50  0000 C CNN
+F 2 "" H 6550 2850 50  0001 C CNN
+F 3 "" H 6550 2850 50  0001 C CNN
+	1    6550 2850
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

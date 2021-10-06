@@ -1,0 +1,362 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 5300 2500 750  450 
+U 613B2D4E
+F0 "MOSFET pair 1" 50
+F1 "mosfet_pair.sch" 50
+F2 "high" U L 5300 2600 50 
+F3 "low" U L 5300 2800 50 
+F4 "load" U L 5300 2700 50 
+F5 "ouput" U R 6050 2700 50 
+F6 "Vin" I R 6050 2800 50 
+F7 "Gnd" I R 6050 2900 50 
+$EndSheet
+$Sheet
+S 5300 3150 750  450 
+U 613C2EE6
+F0 "MOSFET pair 2" 50
+F1 "mosfet_pair.sch" 50
+F2 "high" U L 5300 3250 50 
+F3 "low" U L 5300 3450 50 
+F4 "load" U L 5300 3350 50 
+F5 "ouput" U R 6050 3350 50 
+F6 "Vin" I R 6050 3450 50 
+F7 "Gnd" I R 6050 3550 50 
+$EndSheet
+$Sheet
+S 5300 3800 750  450 
+U 613C2FF8
+F0 "MOSFET pair 3" 50
+F1 "mosfet_pair.sch" 50
+F2 "high" U L 5300 3900 50 
+F3 "low" U L 5300 4100 50 
+F4 "load" U L 5300 4000 50 
+F5 "ouput" U R 6050 4000 50 
+F6 "Vin" I R 6050 4100 50 
+F7 "Gnd" I R 6050 4200 50 
+$EndSheet
+Wire Wire Line
+	5000 2750 5000 2600
+Wire Wire Line
+	5000 2600 5300 2600
+Wire Wire Line
+	5100 2850 5100 2700
+Wire Wire Line
+	5100 2700 5300 2700
+Wire Wire Line
+	5200 2950 5200 2800
+Wire Wire Line
+	5200 2800 5300 2800
+Wire Wire Line
+	4850 3950 4850 4100
+Wire Wire Line
+	4850 4100 5300 4100
+Wire Wire Line
+	4950 3850 4950 4000
+Wire Wire Line
+	4950 4000 5300 4000
+Wire Wire Line
+	5050 3750 5050 3900
+Wire Wire Line
+	5050 3900 5300 3900
+Wire Wire Line
+	6050 2700 6550 2700
+Wire Wire Line
+	6050 3350 6550 3350
+Wire Wire Line
+	6050 4000 6550 4000
+$Comp
+L Device:CP1_Small C6
+U 1 1 613C6A02
+P 4500 2750
+F 0 "C6" H 4591 2796 50  0000 L CNN
+F 1 "CP1_Small" H 4591 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4500 2750 50  0001 C CNN
+F 3 "~" H 4500 2750 50  0001 C CNN
+	1    4500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L gate_drivers:IRS2334 U?
+U 1 1 613B4F92
+P 3950 3350
+AR Path="/613B4F92" Ref="U?"  Part="1" 
+AR Path="/613B2859/613B4F92" Ref="U2"  Part="1" 
+F 0 "U2" H 3950 4431 50  0000 C CNN
+F 1 "IRS2334" H 3950 4340 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 4000 2600 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irs2334pbf.pdf?fileId=5546d462533600a40153567aa9fe280b" H 3950 3350 50  0001 C CNN
+	1    3950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C7
+U 1 1 613CA2A4
+P 4650 3250
+F 0 "C7" H 4741 3296 50  0000 L CNN
+F 1 "CP1_Small" H 4741 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4650 3250 50  0001 C CNN
+F 3 "~" H 4650 3250 50  0001 C CNN
+	1    4650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C8
+U 1 1 613CA7EA
+P 4800 3750
+F 0 "C8" H 4891 3796 50  0000 L CNN
+F 1 "CP1_Small" H 4891 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4800 3750 50  0001 C CNN
+F 3 "~" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 3850
+Wire Wire Line
+	4800 3850 4950 3850
+Wire Wire Line
+	4350 3950 4850 3950
+Wire Wire Line
+	4350 3850 4800 3850
+Wire Wire Line
+	4350 3750 5050 3750
+Wire Wire Line
+	4350 3650 4800 3650
+Wire Wire Line
+	4350 3450 5300 3450
+Wire Wire Line
+	4350 3350 4650 3350
+Connection ~ 4650 3350
+Wire Wire Line
+	4650 3350 5300 3350
+Wire Wire Line
+	4350 3250 5300 3250
+Wire Wire Line
+	4650 3150 4350 3150
+Wire Wire Line
+	4350 2950 5200 2950
+Wire Wire Line
+	4350 2850 4500 2850
+Wire Wire Line
+	4350 2750 5000 2750
+Wire Wire Line
+	4350 2650 4500 2650
+Connection ~ 4800 3650
+NoConn ~ 4800 3250
+NoConn ~ 4800 2750
+NoConn ~ 4800 2850
+NoConn ~ 4800 2950
+NoConn ~ 4800 3350
+NoConn ~ 4800 3450
+Connection ~ 4650 3150
+NoConn ~ 4650 2950
+NoConn ~ 4650 2850
+NoConn ~ 4650 2750
+$Comp
+L Device:D D4
+U 1 1 613D8032
+P 4350 2250
+F 0 "D4" H 4350 2033 50  0000 C CNN
+F 1 "D" H 4350 2124 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4350 2250 50  0001 C CNN
+F 3 "~" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 613DAC8B
+P 4350 2100
+F 0 "D3" H 4350 1883 50  0000 C CNN
+F 1 "D" H 4350 1974 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4350 2100 50  0001 C CNN
+F 3 "~" H 4350 2100 50  0001 C CNN
+	1    4350 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 613DAE8D
+P 4350 1950
+F 0 "D2" H 4350 1733 50  0000 C CNN
+F 1 "D" H 4350 1824 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 4350 1950 50  0001 C CNN
+F 3 "~" H 4350 1950 50  0001 C CNN
+	1    4350 1950
+	-1   0    0    1   
+$EndComp
+Connection ~ 4500 2850
+Wire Wire Line
+	4500 2850 5100 2850
+Wire Wire Line
+	4500 2650 4500 2250
+Connection ~ 4500 2650
+Wire Wire Line
+	4800 1950 4800 3650
+Wire Wire Line
+	4650 2100 4650 3150
+Wire Wire Line
+	4500 2100 4650 2100
+Wire Wire Line
+	4500 1950 4800 1950
+Wire Wire Line
+	4200 2250 3950 2250
+Wire Wire Line
+	3950 2250 3950 2450
+Wire Wire Line
+	4200 2100 3950 2100
+Wire Wire Line
+	3950 2100 3950 2250
+Connection ~ 3950 2250
+Wire Wire Line
+	3950 1950 3950 2100
+Connection ~ 3950 2100
+Wire Wire Line
+	3950 1950 4200 1950
+Text HLabel 6550 2700 2    50   UnSpc ~ 0
+motor_output_1
+Text HLabel 6550 3350 2    50   UnSpc ~ 0
+motor_output_2
+Text HLabel 6550 4000 2    50   UnSpc ~ 0
+motor_output_3
+Text HLabel 3550 2750 0    50   UnSpc ~ 0
+high_1
+Text HLabel 3550 2850 0    50   UnSpc ~ 0
+low_1
+Text HLabel 3550 3250 0    50   UnSpc ~ 0
+high_2
+Text HLabel 3550 3350 0    50   UnSpc ~ 0
+low_2
+Text HLabel 3550 3750 0    50   UnSpc ~ 0
+high_3
+Text HLabel 3550 3850 0    50   UnSpc ~ 0
+low_3
+$Comp
+L Device:CP1_Small C1
+U 1 1 615341FB
+P 2950 3100
+F 0 "C1" H 3041 3146 50  0000 L CNN
+F 1 "CP1_Small" H 3041 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2950 3100 50  0001 C CNN
+F 3 "~" H 2950 3100 50  0001 C CNN
+	1    2950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2450 2950 2450
+Wire Wire Line
+	2950 2450 2950 3000
+Connection ~ 3950 2450
+Wire Wire Line
+	3950 4150 2950 4150
+Wire Wire Line
+	2950 4150 2950 3200
+$Comp
+L power:GNDPWR #PWR0103
+U 1 1 6144307D
+P 6200 4250
+F 0 "#PWR0103" H 6200 4050 50  0001 C CNN
+F 1 "GNDPWR" H 6204 4096 50  0000 C CNN
+F 2 "" H 6200 4200 50  0001 C CNN
+F 3 "" H 6200 4200 50  0001 C CNN
+	1    6200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0104
+U 1 1 61443B73
+P 6200 3600
+F 0 "#PWR0104" H 6200 3400 50  0001 C CNN
+F 1 "GNDPWR" H 6204 3446 50  0000 C CNN
+F 2 "" H 6200 3550 50  0001 C CNN
+F 3 "" H 6200 3550 50  0001 C CNN
+	1    6200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 614447FA
+P 6200 2950
+F 0 "#PWR0105" H 6200 2750 50  0001 C CNN
+F 1 "GNDPWR" H 6204 2796 50  0000 C CNN
+F 2 "" H 6200 2900 50  0001 C CNN
+F 3 "" H 6200 2900 50  0001 C CNN
+	1    6200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0108
+U 1 1 61444DAB
+P 6200 4100
+F 0 "#PWR0108" H 6200 3950 50  0001 C CNN
+F 1 "+BATT" H 6215 4273 50  0000 C CNN
+F 2 "" H 6200 4100 50  0001 C CNN
+F 3 "" H 6200 4100 50  0001 C CNN
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0109
+U 1 1 61445AF1
+P 6200 3450
+F 0 "#PWR0109" H 6200 3300 50  0001 C CNN
+F 1 "+BATT" H 6215 3623 50  0000 C CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0110
+U 1 1 61445E59
+P 6200 2800
+F 0 "#PWR0110" H 6200 2650 50  0001 C CNN
+F 1 "+BATT" H 6215 2973 50  0000 C CNN
+F 2 "" H 6200 2800 50  0001 C CNN
+F 3 "" H 6200 2800 50  0001 C CNN
+	1    6200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2800 6200 2800
+Wire Wire Line
+	6050 2900 6200 2900
+Wire Wire Line
+	6200 2900 6200 2950
+Wire Wire Line
+	6050 3450 6200 3450
+Wire Wire Line
+	6050 3550 6200 3550
+Wire Wire Line
+	6050 4100 6200 4100
+Wire Wire Line
+	6050 4200 6200 4200
+Wire Wire Line
+	6200 3550 6200 3600
+Wire Wire Line
+	6200 4200 6200 4250
+Text HLabel 3950 1900 1    50   UnSpc ~ 0
+Vin
+Text HLabel 3950 4200 3    50   UnSpc ~ 0
+Gnd
+Wire Wire Line
+	3950 4200 3950 4150
+Connection ~ 3950 4150
+Wire Wire Line
+	3950 1950 3950 1900
+Connection ~ 3950 1950
+$EndSCHEMATC

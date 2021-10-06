@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FAN7388
+D 3 Half-Bridge Gate-Drive IC, 600V operation, Output Current 350/650mA, SOIC-20
+K 3 Phase Gate Driver
+F https://www.onsemi.com/pub/Collateral/FAN7388-D.pdf
+$ENDCMP
+#
+$CMP FAN7888
+D 3 Half-Bridge Gate-Drive IC, 200V operation, Output Current 350/650mA, SOIC-20
+K 3 Phase Gate Driver
+F http://www.onsemi.com/pub/Collateral/FAN7888-D.pdf
+$ENDCMP
+#
+$CMP IRS2334
+D 3 Half-Bridge Gate-Drive IC, 200V operation, Output Current 350/650mA, SOIC-20
+K 3 Phase Gate Driver
+F http://www.onsemi.com/pub/Collateral/FAN7888-D.pdf
+$ENDCMP
+#
+#End Doc Library

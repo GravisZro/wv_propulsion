@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name mosfets)(type KiCad)(uri ${KIPRJMOD}/mosfets.pretty)(options "")(descr ""))
+)

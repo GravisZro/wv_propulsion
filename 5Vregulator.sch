@@ -1,0 +1,108 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0108
+U 1 1 615975AD
+P 5600 3800
+F 0 "#PWR0108" H 5600 3550 50  0001 C CNN
+F 1 "GND" H 5605 3627 50  0000 C CNN
+F 2 "" H 5600 3800 50  0001 C CNN
+F 3 "" H 5600 3800 50  0001 C CNN
+	1    5600 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3450 6100 3350
+Wire Wire Line
+	6100 3350 6000 3350
+$Comp
+L Device:C_Small C5
+U 1 1 615975CB
+P 6100 3550
+F 0 "C5" H 6192 3596 50  0000 L CNN
+F 1 "0.1μF, 25V" H 6192 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6100 3550 50  0001 C CNN
+F 3 "~" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3350 6100 3100
+Connection ~ 6100 3350
+Wire Wire Line
+	5600 3600 5600 3750
+Wire Wire Line
+	6100 3650 6100 3750
+Wire Wire Line
+	6100 3750 5600 3750
+Connection ~ 5600 3750
+Wire Wire Line
+	5600 3750 5600 3800
+Wire Wire Line
+	5100 3750 5600 3750
+Wire Wire Line
+	5100 3650 5100 3750
+Connection ~ 5100 3350
+Wire Wire Line
+	5100 3350 5100 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 615975BF
+P 5100 3200
+AR Path="/615975BF" Ref="#PWR?"  Part="1" 
+AR Path="/61596F1B/615975BF" Ref="#PWR?"  Part="1" 
+AR Path="/6158E9D7/615975BF" Ref="#PWR0117"  Part="1" 
+AR Path="/61735FD4/615975BF" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 5100 3050 50  0001 C CNN
+F 1 "+5V" H 5115 3373 50  0000 C CNN
+F 2 "" H 5100 3200 50  0001 C CNN
+F 3 "" H 5100 3200 50  0001 C CNN
+	1    5100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3350 5100 3450
+Wire Wire Line
+	5200 3350 5100 3350
+$Comp
+L ldos:AS78LXX Q3
+U 1 1 615975A7
+P 5600 3250
+F 0 "Q3" H 5600 3565 50  0000 C CNN
+F 1 "AS78LXX" H 5600 3474 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5600 3250 50  0001 C CNN
+F 3 "" H 5600 3250 50  0001 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 615975C5
+P 5100 3550
+AR Path="/615975C5" Ref="C?"  Part="1" 
+AR Path="/61596F1B/615975C5" Ref="C?"  Part="1" 
+AR Path="/6158E9D7/615975C5" Ref="C1"  Part="1" 
+AR Path="/61735FD4/615975C5" Ref="C1"  Part="1" 
+F 0 "C1" H 5200 3500 50  0000 L CNN
+F 1 "0.33μF, 10V" H 5200 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5100 3550 50  0001 C CNN
+F 3 "~" H 5100 3550 50  0001 C CNN
+	1    5100 3550
+	-1   0    0    1   
+$EndComp
+Text HLabel 6100 3100 1    50   UnSpc ~ 0
+Vin
+$EndSCHEMATC

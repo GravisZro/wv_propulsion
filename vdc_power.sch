@@ -1,0 +1,300 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L?
+U 1 1 614CD108
+P 7000 3700
+F 0 "L?" H 7052 3746 50  0000 L CNN
+F 1 "L" H 7052 3655 50  0000 L CNN
+F 2 "" H 7000 3700 50  0001 C CNN
+F 3 "~" H 7000 3700 50  0001 C CNN
+	1    7000 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614CD10E
+P 5700 4650
+F 0 "#PWR?" H 5700 4400 50  0001 C CNN
+F 1 "GND" H 5705 4477 50  0000 C CNN
+F 2 "" H 5700 4650 50  0001 C CNN
+F 3 "" H 5700 4650 50  0001 C CNN
+	1    5700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 614CD114
+P 4400 3600
+F 0 "#PWR?" H 4400 3450 50  0001 C CNN
+F 1 "+BATT" H 4415 3773 50  0000 C CNN
+F 2 "" H 4400 3600 50  0001 C CNN
+F 3 "" H 4400 3600 50  0001 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-BATT #PWR?
+U 1 1 614CD11A
+P 4400 4550
+F 0 "#PWR?" H 4400 4400 50  0001 C CNN
+F 1 "-BATT" H 4415 4723 50  0000 C CNN
+F 2 "" H 4400 4550 50  0001 C CNN
+F 3 "" H 4400 4550 50  0001 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM5161PWP U?
+U 1 1 614CD120
+P 5800 3900
+F 0 "U?" H 5800 4467 50  0000 C CNN
+F 1 "LM5161PWP" H 5800 4376 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm" H 5850 3450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm5161.pdf" H 5800 4450 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4400 5700 4550
+$Comp
+L Device:CP1_Small C?
+U 1 1 614CD127
+P 6400 4300
+F 0 "C?" H 6491 4346 50  0000 L CNN
+F 1 "CP1_Small" H 6491 4255 50  0000 L CNN
+F 2 "" H 6400 4300 50  0001 C CNN
+F 3 "~" H 6400 4300 50  0001 C CNN
+	1    6400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 614CD12D
+P 6400 3700
+F 0 "C?" H 6491 3746 50  0000 L CNN
+F 1 "CP1_Small" H 6491 3655 50  0000 L CNN
+F 2 "" H 6400 3700 50  0001 C CNN
+F 3 "~" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 614CD133
+P 7500 4300
+F 0 "C?" H 7591 4346 50  0000 L CNN
+F 1 "CP1_Small" H 7591 4255 50  0000 L CNN
+F 2 "" H 7500 4300 50  0001 C CNN
+F 3 "~" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 614CD139
+P 7250 3800
+F 0 "R?" H 7318 3846 50  0000 L CNN
+F 1 "R_Small_US" H 7318 3755 50  0000 L CNN
+F 2 "" H 7250 3800 50  0001 C CNN
+F 3 "~" H 7250 3800 50  0001 C CNN
+	1    7250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 614CD13F
+P 7250 4300
+F 0 "R?" H 7318 4346 50  0000 L CNN
+F 1 "R_Small_US" H 7318 4255 50  0000 L CNN
+F 2 "" H 7250 4300 50  0001 C CNN
+F 3 "~" H 7250 4300 50  0001 C CNN
+	1    7250 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4550 5800 4550
+Wire Wire Line
+	5800 4550 5800 4400
+Connection ~ 5700 4550
+Wire Wire Line
+	5700 4550 5700 4650
+Wire Wire Line
+	5800 4550 6200 4550
+Wire Wire Line
+	6200 4200 6200 4550
+Connection ~ 5800 4550
+Wire Wire Line
+	6200 4550 6400 4550
+Wire Wire Line
+	6400 4550 6400 4400
+Connection ~ 6200 4550
+Wire Wire Line
+	6400 4550 7250 4550
+Wire Wire Line
+	7250 4550 7250 4400
+Connection ~ 6400 4550
+Wire Wire Line
+	7250 4550 7500 4550
+Wire Wire Line
+	7500 4550 7500 4400
+Connection ~ 7250 4550
+Wire Wire Line
+	6400 4100 6400 4200
+Wire Wire Line
+	6200 4100 6400 4100
+Wire Wire Line
+	6200 3900 7250 3900
+Connection ~ 7250 3900
+Wire Wire Line
+	7250 3900 7250 4200
+Wire Wire Line
+	7150 3700 7250 3700
+Wire Wire Line
+	7250 3700 7500 3700
+Wire Wire Line
+	7500 3700 7500 4200
+Connection ~ 7250 3700
+$Comp
+L Device:CP1_Small C?
+U 1 1 614CD15E
+P 5150 4300
+F 0 "C?" H 5241 4346 50  0000 L CNN
+F 1 "CP1_Small" H 5241 4255 50  0000 L CNN
+F 2 "" H 5150 4300 50  0001 C CNN
+F 3 "~" H 5150 4300 50  0001 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 614CD164
+P 4850 4300
+F 0 "R?" H 4918 4346 50  0000 L CNN
+F 1 "R_Small_US" H 4918 4255 50  0000 L CNN
+F 2 "" H 4850 4300 50  0001 C CNN
+F 3 "~" H 4850 4300 50  0001 C CNN
+	1    4850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3900 4850 3900
+Wire Wire Line
+	4850 3900 4850 4200
+Wire Wire Line
+	4850 4550 4850 4400
+$Comp
+L Device:R_Small_US R?
+U 1 1 614CD16D
+P 4850 3700
+F 0 "R?" H 4918 3746 50  0000 L CNN
+F 1 "R_Small_US" H 4918 3655 50  0000 L CNN
+F 2 "" H 4850 3700 50  0001 C CNN
+F 3 "~" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 614CD173
+P 5150 3700
+F 0 "R?" H 5218 3746 50  0000 L CNN
+F 1 "R_Small_US" H 5218 3655 50  0000 L CNN
+F 2 "" H 5150 3700 50  0001 C CNN
+F 3 "~" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4550 5150 4550
+Wire Wire Line
+	5150 4200 5400 4200
+Wire Wire Line
+	5150 4400 5150 4550
+Connection ~ 5150 4550
+Wire Wire Line
+	5150 4550 5700 4550
+$Comp
+L Device:CP1_Small C?
+U 1 1 614CD17E
+P 4550 4300
+F 0 "C?" H 4641 4346 50  0000 L CNN
+F 1 "CP1_Small" H 4641 4255 50  0000 L CNN
+F 2 "" H 4550 4300 50  0001 C CNN
+F 3 "~" H 4550 4300 50  0001 C CNN
+	1    4550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4550 4550 4550
+Wire Wire Line
+	4550 4550 4550 4400
+Connection ~ 4850 4550
+Wire Wire Line
+	4400 4550 4550 4550
+Connection ~ 4550 4550
+Wire Wire Line
+	5400 3700 5300 3700
+Wire Wire Line
+	5300 3700 5300 3800
+Wire Wire Line
+	5300 3800 5150 3800
+Wire Wire Line
+	5400 3600 5150 3600
+Wire Wire Line
+	5150 3600 4850 3600
+Connection ~ 5150 3600
+Wire Wire Line
+	4850 3800 4850 3900
+Connection ~ 4850 3900
+Wire Wire Line
+	4850 3600 4550 3600
+Wire Wire Line
+	4550 3600 4550 4200
+Connection ~ 4850 3600
+Connection ~ 4550 3600
+Wire Wire Line
+	4400 3600 4550 3600
+Wire Wire Line
+	6200 3600 6400 3600
+Wire Wire Line
+	6200 3700 6300 3700
+Wire Wire Line
+	6300 3700 6300 3800
+Wire Wire Line
+	6300 3800 6400 3800
+Wire Wire Line
+	6400 3800 6650 3800
+Wire Wire Line
+	6650 3800 6650 3700
+Wire Wire Line
+	6650 3700 6850 3700
+Connection ~ 6400 3800
+$Comp
+L power:+12V #PWR?
+U 1 1 614CD19E
+P 7600 3700
+F 0 "#PWR?" H 7600 3550 50  0001 C CNN
+F 1 "+12V" H 7615 3873 50  0000 C CNN
+F 2 "" H 7600 3700 50  0001 C CNN
+F 3 "" H 7600 3700 50  0001 C CNN
+	1    7600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3700 7500 3700
+Connection ~ 7500 3700
+$EndSCHEMATC

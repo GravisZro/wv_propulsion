@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name gate_drivers)(type Legacy)(uri ${KIPRJMOD}/gate_drivers.lib)(options "")(descr ""))
+  (lib (name mosfets)(type Legacy)(uri ${KIPRJMOD}/mosfets.lib)(options "")(descr ""))
+  (lib (name ldos)(type Legacy)(uri ${KIPRJMOD}/ldos.lib)(options "")(descr ""))
+)
